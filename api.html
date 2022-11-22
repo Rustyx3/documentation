@@ -13,6 +13,7 @@
 </head>
 
 <body>
+ <!-- Main variables *content* -->
  <div class="container">
   <div class="row">
    <div class="col-lg-8 col-lg-offset-2">
@@ -86,6 +87,26 @@
 ]
 </pre>
       <h4 class="m-t-md"><strong>Add order</strong></h4>
+      <p>
+      <form class="form-inline">
+       <div class="form-group">
+        <select class="form-control input-sm" id="service_type">
+         <option value="0">Default</option>
+         <option value="10">Package</option>
+         <option value="2">Custom Comments</option>
+         <option value="3">Mentions with Hashtags</option>
+         <option value="4">Mentions Custom List</option>
+         <option value="7">Mentions User Followers</option>
+         <option value="8">Mentions Media Likers</option>
+         <option value="14">Custom Comments Package</option>
+         <option value="15">Comment Likes</option>
+         <option value="17">Poll</option>
+         <option value="20">Invites from Groups</option>
+         <option value="100">Subscriptions</option>
+        </select>
+       </div>
+      </form>
+      </p>
       <div id="type_0" style="display:none;">
        <table class="table table-bordered">
         <thead>
@@ -704,6 +725,36 @@
    </div>
   </div>
  </div>
+ <script type="text/javascript" src="https://cdn.mypanel.link/libs/jquery/1.12.4/jquery.min.js">
+ </script>
+ <script type="text/javascript" src="https://cdn.mypanel.link/global/aknio8ec1fpphc0p.js">
+ </script>
+ <script type="text/javascript" src="https://cdn.mypanel.link/global/nfos6j9mo1on7ksz.js">
+ </script>
+ <script type="text/javascript" src="https://cdn.mypanel.link/global/i6mm6da5d3159420.js">
+ </script>
+ <script type="text/javascript" src="https://cdn.mypanel.link/global/6cpemo5rgp75dw40.js">
+ </script>
+ <script type="text/javascript" src="https://cdn.mypanel.link/global/losuh2ycsnzaoh4x.js">
+ </script>
+ <script type="text/javascript" src="https://cdn.mypanel.link/global/c08jh4sc7xh7y9lf.js">
+ </script>
+ <script type="text/javascript">
+  window.modules.layouts = { "theme_id": 1, "auth": 1, "live": true, "csrftoken": "hNe-_3XPAALVH5T-50SzF3edzQDfh02IfAIwd9Y_2QnBnue3Gb1DZ-x05syXcPF0ANykbYbFe79JSnoVnFPqXA==" };   </script>
+ <script type="text/javascript">
+  window.modules.api = [];   </script>
+ <script type="text/javascript">
+ </script>
+ <script>
+  var _services_data = window.modules.siteOrder.services;
+ </script>
+ <script>
+  function chk ()
+  {
+   var a = document.getElementById( "orderform-service" ).value;
+   document.getElementById( "span_sh" ).textContent = "ID : " + a;
+  }
+ </script>
 </body>
 
 </html>
